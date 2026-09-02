@@ -2,7 +2,7 @@
 export PATH="$PATH:/Users/kannavkm/Library/Application Support/JetBrains/Toolbox/scripts"
 
 ts() {
-    selected=$(find -L ~/palantir -maxdepth 1 -type d -not -path '*/.*' | fzf)
+    selected=$(find -L ~/workspace -maxdepth 1 -type d -not -path '*/.*' | fzf)
 
     if [[ -z $selected ]]; then
         return 0
